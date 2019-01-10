@@ -111,6 +111,7 @@ public class RegisterActivity extends AppCompatActivity {
                             if (task.isSuccessful()) {
                                 progress.setVisibility(View.INVISIBLE);
                                 Intent mainIntent = new Intent(RegisterActivity.this, MainActivity.class);
+                                //deletes the activity stack
                                 mainIntent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
                                 startActivity(mainIntent);
                                 Toast.makeText(RegisterActivity.this, "Registration Sucessfull", Toast.LENGTH_SHORT).show();

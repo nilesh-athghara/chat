@@ -115,7 +115,7 @@ public class RegisterActivity extends AppCompatActivity {
                                 mainIntent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
                                 startActivity(mainIntent);
                                 Toast.makeText(RegisterActivity.this, "Registration Sucessfull", Toast.LENGTH_SHORT).show();
-                                finish();//when user presses back button it will not come back to this_activity
+                                finish();//when user presses back button it will not come back to this____________________activity
                             } else {
                                 progress.setVisibility(View.INVISIBLE);
                                 Toast.makeText(RegisterActivity.this, task.getException().getMessage(), Toast.LENGTH_SHORT).show();

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".SettingsActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/settingsCircleImageView"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="36dp"
+        android:src="@drawable/deafult_profile_pic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/settingDisplayName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="DisplayName"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/settingsCircleImageView"
+        app:layout_constraintStart_toStartOf="@+id/settingsCircleImageView"
+        app:layout_constraintTop_toBottomOf="@+id/settingsCircleImageView" />
+
+    <TextView
+        android:id="@+id/settingStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Status"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="@+id/settingDisplayName"
+        app:layout_constraintStart_toStartOf="@+id/settingDisplayName"
+        app:layout_constraintTop_toBottomOf="@+id/settingDisplayName" />
+
+    <Button
+        android:id="@+id/settingChangeImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="48dp"
+        android:backgroundTint="@color/common_google_signin_btn_text_dark_default"
+        android:elevation="0dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="Change Image"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toTopOf="@+id/settingChangeStatus"
+        app:layout_constraintEnd_toEndOf="@+id/settingDisplayName"
+        app:layout_constraintHorizontal_bias="0.588"
+        app:layout_constraintStart_toStartOf="@+id/settingDisplayName" />
+
+    <Button
+        android:id="@+id/settingChangeStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="116dp"
+        android:backgroundTint="@color/colorAccent"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="Change Satus"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/settingChangeImage"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/settingChangeImage" />
+</android.support.constraint.ConstraintLayout>
